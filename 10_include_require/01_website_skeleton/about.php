@@ -1,19 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-<header>
-    <a href="index.php">Home</a>
-    <a href="about.php">About</a>
-</header>
+<?php include "partials/header.php" ?>    <!--  ek hi code 2 files m hai to usko ek m kar k include kar do -->
+<!-- instaed of include we can also use require. in include, on giving wrong path it gives error and rest code works. but in case of require rest code do not work.
+  include_once is used if we want  include only once. 
+-->
 <h1>About us</h1>
-<footer>
-    Copyright &copy; TheCodeholic</footer>
-</body>
-</html>
+
+<?php include_once "partials/footer.php"; ?>
